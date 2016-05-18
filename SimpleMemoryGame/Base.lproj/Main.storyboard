@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memoryGameDemoBG" translatesAutoresizingMaskIntoConstraints="NO" id="46M-sj-4i4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jow-bo-bA9">
                                 <rect key="frame" x="32" y="335" width="150" height="150"/>
                                 <constraints>
@@ -69,30 +73,31 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAB-WF-pGl">
-                                <rect key="frame" x="59" y="54" width="257" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="257" id="VCc-ya-kwq"/>
-                                    <constraint firstAttribute="height" constant="34" id="cPx-96-jdy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-4" y="78" width="383" height="71"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="56"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rAB-WF-pGl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="2kz-uK-93Q"/>
                             <constraint firstItem="Q0F-Q0-tKS" firstAttribute="leading" secondItem="tJg-6b-oVG" secondAttribute="trailing" constant="-38" id="6wd-yd-kLa"/>
+                            <constraint firstItem="46M-sj-4i4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Gx-1x-OFc"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Gb-2D-f60"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rAB-WF-pGl" secondAttribute="trailing" constant="-20" id="CfC-BI-YVh"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="top" secondItem="Q0F-Q0-tKS" secondAttribute="bottom" constant="-40" id="FXj-Xd-C7j"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="leading" secondItem="58V-9x-8EK" secondAttribute="trailing" constant="-39" id="Hu3-Yz-F9N"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="46M-sj-4i4" secondAttribute="bottom" id="Jag-pa-Ha6"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="leading" secondItem="Jow-bo-bA9" secondAttribute="trailing" constant="-39" id="Lh3-Dc-ymc"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ML3-EE-b4s"/>
+                            <constraint firstItem="rAB-WF-pGl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="YlE-at-wBD"/>
+                            <constraint firstItem="46M-sj-4i4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YnI-sa-q3K"/>
                             <constraint firstItem="Jow-bo-bA9" firstAttribute="top" secondItem="tJg-6b-oVG" secondAttribute="bottom" constant="-43" id="Z5I-Bc-WR3"/>
                             <constraint firstItem="G7E-1S-AHW" firstAttribute="leading" secondItem="tJg-6b-oVG" secondAttribute="trailing" constant="-38" id="ied-Xg-eqp"/>
-                            <constraint firstItem="rAB-WF-pGl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lVP-Me-IuM"/>
                             <constraint firstItem="G7E-1S-AHW" firstAttribute="top" secondItem="tJg-6b-oVG" secondAttribute="bottom" constant="-43" id="pMk-FP-M5i"/>
                             <constraint firstItem="tJg-6b-oVG" firstAttribute="top" secondItem="58V-9x-8EK" secondAttribute="bottom" constant="-40" id="psc-7F-0mk"/>
+                            <constraint firstItem="rAB-WF-pGl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="tFA-Gl-C5n"/>
+                            <constraint firstAttribute="trailing" secondItem="46M-sj-4i4" secondAttribute="trailing" id="toI-XT-SCX"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -113,6 +118,7 @@
     <resources>
         <image name="blue" width="166" height="166"/>
         <image name="green" width="165" height="166"/>
+        <image name="memoryGameDemoBG" width="1884" height="1256"/>
         <image name="play" width="88" height="88"/>
         <image name="red" width="165" height="165"/>
         <image name="yellow" width="166" height="165"/>
